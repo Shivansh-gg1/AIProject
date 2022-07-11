@@ -99,7 +99,6 @@ if __name__ == "__main__":
             query = query.replace("wikipedia", "")
             results = wikipedia.summary(query, sentences=5)
             speak("According to Wikipedia")
-            print(results)
             speak(results)
         
         elif 'how are you' in query:
@@ -107,7 +106,7 @@ if __name__ == "__main__":
             speak("How are you, Sir")
  
         elif 'fine' in query or "good" in query:
-            speak("It's good to know that your fine")
+            speak("It's good to know that your fine.. What can I do for you?")
 
         elif "who are you" in query:
             speak("I am your virtual assistant created by Shivaansh")
